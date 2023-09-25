@@ -33,7 +33,7 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
-			<div class="collapse navbar-collapse" id="ftco-nav">
+			<div class="collapse navbar-collapse" id="ftco-nav" style="background-color: white;">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a href="index.html" class="nav-link pl-0">Home</a></li>
 					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
@@ -46,6 +46,17 @@
 			</div>
 		</div>
 	</nav>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			window.addEventListener('scroll', function() {
+				if (window.scrollY > 50) {
+					document.querySelector('.navbar').style.backgroundColor = '#fff'; /* Change background color to black when scrolled down */
+				} else {
+					document.querySelector('.navbar').style.backgroundColor = '#fff'; /* Change background color back to white when at the top */
+				}
+			});
+		});
+	</script>
 	
     <!-- END nav -->
     

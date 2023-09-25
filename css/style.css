@@ -3452,7 +3452,8 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem; 
+background-color: white !important;}
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;
@@ -3494,7 +3495,8 @@ input[type="button"].btn-block {
     padding-left: 0; }
   .navbar-nav .dropdown-menu {
     position: static;
-    float: none; }
+    float: none;
+  color:black;}
 
 .navbar-text {
   display: inline-block;
@@ -3531,6 +3533,40 @@ input[type="button"].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%; }
+   @media (max-width: 768px) {
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #000; /* Change the color of the toggler icon */
+        }
+        
+        .navbar-dark .navbar-toggler {
+            color: #000; /* Change the color of the toggler text */
+        }
+
+        .navbar-dark .navbar-collapse {
+            background-color: #fff !important; /* Force the background color to stay white */
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #000 !important; /* Force the text color to stay black */
+        }
+    }
+    @media (max-width: 768px) {
+      .navbar-dark .navbar-toggler-icon {
+          background-color: #000; /* Change the color of the toggler icon */
+      }
+      
+      .navbar-dark .navbar-toggler {
+          color: #000; /* Change the color of the toggler text */
+      }
+
+      .navbar-dark .navbar-collapse {
+          background-color: #fff !important; /* Force the background color to stay white */
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+          color: #000 !important; /* Force the text color to stay black */
+      }
+  }
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
@@ -8040,7 +8076,7 @@ h1, h2, h3, h4, h5,
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+      background: #fff !important;
       position: relative;
       top: 0;
       padding: 10px 15px; } }
@@ -8121,7 +8157,7 @@ h1, h2, h3, h4, h5,
         color: #fff; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: black !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
