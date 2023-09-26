@@ -57,7 +57,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #ECF0F1; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -133,11 +133,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
+  color: #EAEDED ;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #0056b3;
+    color: #EAEDED ;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -155,6 +155,12 @@ kbd,
 samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em; }
+
+  .custom-bg {
+    background-color: 
+    #EAEDED  ; 
+    /* Use your preferred shade of grey here */
+}
 
 pre {
   margin-top: 0;
@@ -8578,7 +8584,7 @@ h1, h2, h3, h4, h5,
       border-radius: 50%; }
       .ftco-services .services .icon span {
         font-size: 50px;
-        color: #1eaaf1; }
+        color: #B99B35; }
     .ftco-services .services .media-body {
       color: rgba(255, 255, 255, 0.8); }
       @media (max-width: 767.98px) {
@@ -9077,7 +9083,7 @@ textarea.form-control {
 .media .ftco-icon {
   width: 100px; }
   .media .ftco-icon span {
-    color: #1eaaf1; }
+    color: #B99B35; }
 
 #map {
   width: 100%; }
