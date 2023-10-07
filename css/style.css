@@ -65,11 +65,28 @@ body {
 
   .paragraph-container {
     display: flex;
+    display: flex;
+    justify-content: center; /* Center the paragraphs */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow paragraphs to wrap to the next line */
+}
+.home-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-size: cover;
+
 }
 
+@media (max-width: 768px) {
+  .home-video {
+      height: 400px; /* Adjust the height for smaller screens */
+  }
+}
 .paragraph {
     flex: 1;
-    margin: 0 10px;
+    margin: 10px;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -80,6 +97,10 @@ body {
   .paragraph-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 0px;
     
   }
 
