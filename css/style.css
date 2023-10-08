@@ -8651,7 +8651,7 @@ h1, h2, h3, h4, h5,
 .services-2 {
   margin-bottom: 30px; }
   .services-2 .icon {
-    line-height: 1;
+    line-height: 2;
     position: relative;
     width: 80px;
     height: 80px;
@@ -8662,6 +8662,8 @@ h1, h2, h3, h4, h5,
     border-radius: 50%; }
     .services-2 .icon span {
       font-size: 30px;
+      justify-content: center;
+      align-items: center;
       color: #fff; }
   .services-2 .text {
     width: calc(100% - 80px); }
