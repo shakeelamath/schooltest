@@ -31,8 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  }
 
 *,
 *::before,
@@ -41,17 +40,23 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: 'ArgentumSans';
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
+  @font-face {
+    font-family: 'ArgentumSans';
+    src: url('/fonts/argentum-sans.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "ArgentumSans";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -121,9 +126,23 @@ hr {
   height: 0;
   overflow: visible; }
 
+
+  @font-face {
+    font-family: 'BebasNeue';
+    src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  font-family: 'BebasNeue', sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+letter-spacing:1px ; }
 
 p {
   margin-top: 0;
@@ -3500,6 +3519,8 @@ input[type="button"].btn-block {
 }
 .navbar {
   position: relative;
+  font-family: 'BebasNeue';
+  letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9474,7 +9495,9 @@ textarea.form-control {
 
 .contact-section .box {
   width: 100%;
-  display: block; }
+  display: block;
+align-items: center;
+justify-content: center; }
   .contact-section .box h3 {
     font-size: 24px;
     font-weight: 500; }
