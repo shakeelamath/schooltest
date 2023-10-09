@@ -9162,11 +9162,17 @@ textarea.form-control {
   .media .ftco-icon span {
     color: #B99B35; }
 
-#map {
-  width: 100%; }
-  @media (max-width: 767.98px) {
-    #map {
-      height: 300px; } }
+    #map1 {
+      width: 100vw;
+      overflow-x: hidden; /* Add this line */
+    }
+    
+    @media (max-width: 767.98px) {
+      #map1 {
+        height: 300px;
+        width: auto;
+      }
+    }
 
 @-webkit-keyframes pulse {
   0% {
