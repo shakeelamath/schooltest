@@ -3521,6 +3521,7 @@ input[type="button"].btn-block {
   position: relative;
   font-family: 'BebasNeue';
   letter-spacing: 1px;
+  font-size: large;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3561,6 +3562,7 @@ background-color: white !important;}
 
 .navbar-nav {
   display: -webkit-box;
+  font-size: 20px;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
@@ -8181,6 +8183,8 @@ h1, h2, h3, h4, h5,
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       color: #000000; }
+
+     
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
