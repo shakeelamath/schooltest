@@ -92,9 +92,16 @@ body {
 
 @media (max-width: 768px) {
   .home-video {
-    height: 400px; 
+    height: 270px; 
     width: auto;
-    background-position: left left;
+    
+  }
+  .background-image {
+    position: absolute;
+    width: 100%; /* 100% of viewport width */
+    height: 100%; /* 100% of viewport height */
+    object-fit: cover;
+    z-index: -1; /* Ensure the image is behind other content */
   }
 }
 

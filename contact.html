@@ -102,23 +102,51 @@
 			<div class="container">
 				<div class="row d-flex align-items-stretch no-gutters">
 					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
-						<form action="#">
+						<form id="contact-form" 
+                      method="POST" action="https://script.google.com/macros/s/AKfycbwoVhkkZVNQy6ksF05g5ov28xZG7TPpyHdPATliMHCBe9beb0tiuvX93rMPYw1i-j5x0w/exec"
+            >
               <div class="form-group">
-                <input type="name" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your Email">
+                <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Number">
+                <input type="tel" class="form-control text-white rounded-0 bg-transparent" name="number" placeholder="Phone Number">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <button type="submit"  onclick="submitForm(event)" class="btn btn-primary py-3 px-5">Submit</button>
               </div>
             </form>
+            <script>
+              function submitForm(event) {
+                  event.preventDefault(); // Prevent the form from submitting immediately
+      
+                  // Perform any necessary form validation here before submitting
+                  // Display a success message
+                  alert("Form submitted successfully.");
+      
+                  // Reset the form
+      
+                  // Submit the form asynchronously
+                  var form = document.getElementById("contact-form");
+                  var formData = new FormData(form);
+      
+                  fetch(form.action, {
+                      method: form.method,
+                      body: formData
+                  })
+      
+                  // Handle the response here if needed
+      
+      
+                  // Reset the form
+                  form.reset();
+              }
+          </script>
 					</div>
 					<div class="col-md-6 d-flex align-items-stretch">
 						<div id="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.851850832073!2d80.40212100000001!3d8.317517000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf45176147741%3A0x29952b37ba133259!2sCambridge%20International%20School%20Anuradhapura!5e0!3m2!1sen!2slk!4v1696822782243!5m2!1sen!2slk" width="600" height="450" style="border:0; padding: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
