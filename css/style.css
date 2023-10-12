@@ -49,7 +49,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
   @font-face {
     font-family: 'ArgentumSans';
-    src: url('/fonts/argentum-sans.regular.ttf') format('woff');
+    src: url('/fonts/argentum-sans.regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -129,7 +129,8 @@ hr {
 
   @font-face {
     font-family: 'BebasNeue';
-    src: url('/fonts/BebasNeue-Regular.ttf') format('woff');
+    src: url('/fonts/BebasNeue-Regular.woff') format('woff');
+    
     font-weight: normal;
     font-style: normal;
     
