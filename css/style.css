@@ -49,7 +49,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
   @font-face {
     font-family: 'ArgentumSans';
-    src: url('/fonts/argentum-sans.regular.ttf') format('truetype');
+    src: url('/fonts/argentum-sans.regular.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -129,7 +129,7 @@ hr {
 
   @font-face {
     font-family: 'BebasNeue';
-    src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+    src: url('/fonts/BebasNeue-Regular.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
     
@@ -3520,8 +3520,8 @@ input[type="button"].btn-block {
 }
 .navbar {
   position: relative;
-  font-family: 'BebasNeue';
-  letter-spacing: 1px;
+  font-family: 'ArgentumSans';
+  
   font-size: large;
   display: -webkit-box;
   display: -ms-flexbox;
