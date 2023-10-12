@@ -3514,8 +3514,9 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block; }
   .navbar-brand img {
-    width: 120px; /* This ensures the image doesn't exceed the width of its container */
-    height: auto; /* This maintains the aspect ratio */
+    width: 150px; /* This ensures the image doesn't exceed the width of its container */
+    height: auto;
+    transform: scale(1); /* This maintains the aspect ratio */
 }
 .navbar {
   position: relative;
