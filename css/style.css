@@ -40,23 +40,18 @@
   box-sizing: border-box; }
 
 html {
-  font-family: 'ArgentumSans';
+  font-family: 'Argentum Sans', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
-  @font-face {
-    font-family: 'ArgentumSans';
-    src: url('/fonts/argentum-sans.regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+ 
 
 body {
   margin: 0;
-  font-family: "ArgentumSans";
+  font-family: "Argentum Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -81,13 +76,46 @@ body {
   align-items: center;
   height: 600px;
   background-size: cover;
+  position: relative;
 
 }
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% of viewport width */
+  height: 100vh; /* 100% of viewport height */
+  object-fit: cover;
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
 
 @media (max-width: 768px) {
   .home-video {
-      height: 500px; /* Adjust the height for smaller screens */
+    height: 400px; 
+    width: auto;
+    background-position: left left;
   }
+}
+
+.home-video .overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-video .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  
+}
+
+.home-video .col-md-8 {
+  text-align: center;
 }
 .paragraph {
     flex: 1;
@@ -127,20 +155,13 @@ hr {
   overflow: visible; }
 
 
-  @font-face {
-    font-family: 'BebasNeue';
-    src: url('/fonts/BebasNeue-Regular.woff') format('woff');
-    
-    font-weight: normal;
-    font-style: normal;
-    
-}
+
 
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'BebasNeue', sans-serif !important;
+  font-family: 'Bebas Neue', sans-serif !important;
   font-weight: normal;
   font-style: normal;
 letter-spacing:1px ; }
@@ -373,7 +394,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: 'Bebas Neue';
   font-weight: 500;
   line-height: 1.2;
   color: inherit; }
@@ -3521,7 +3542,7 @@ input[type="button"].btn-block {
 }
 .navbar {
   position: relative;
-  font-family: 'ArgentumSans';
+  font-family: 'Argentum Sans', sans-serif;
   
   font-size: large;
   display: -webkit-box;
