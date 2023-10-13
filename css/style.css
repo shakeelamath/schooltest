@@ -57,7 +57,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #ECF0F1; }
+  background-color: #ECF0F1;
+  overflow-x: hidden; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -86,7 +87,8 @@ body {
   width: 100vw; /* 100% of viewport width */
   height: 100vh; /* 100% of viewport height */
   object-fit: cover;
-  z-index: -1; /* Ensure the image is behind other content */
+  z-index: -1;
+  overflow-x: hidden; /* Ensure the image is behind other content */
 }
 
 
