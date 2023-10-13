@@ -103,7 +103,7 @@
 				<div class="row d-flex align-items-stretch no-gutters">
 					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
 						<form id="contact-form" 
-                      method="POST" action="https://script.google.com/macros/s/AKfycbx33DKR3lle_vdP6Sbeug87G6GuY5y40jGKLX36CE_90saEWdLWvH8O79QhU8oCz7gV/exec"
+                      method="POST" action="https://script.google.com/macros/s/AKfycbza99yTuluTpfj6LScipz0PQR2lY-fMcCd9TtJU3zDhCqPQUICHsfo85bT1gVPniX9pOw/exec"
             >
               <div class="form-group">
                 <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name">
@@ -136,8 +136,10 @@
                   var formData = new FormData(form);
       
                   fetch(form.action, {
+                    redirect: "follow",
                       method: form.method,
-                      body: formData
+                      body: formData,
+                      
                   })
       
                   // Handle the response here if needed
