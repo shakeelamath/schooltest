@@ -76,7 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 600px;
-  background-size: cover;
+  background-size: contain;
   position: relative;
 
 }
