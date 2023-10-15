@@ -9179,10 +9179,13 @@ textarea.form-control {
 .ftco-footer {
   font-size: 14px;
   background: #232323;
-  padding: 6em 0; }
+  padding: 6em 0;
+  align-items: center; 
+justify-content: center; }
   .ftco-footer .ftco-footer-widget {
     width: 100%;
-    display: block; }
+    display: block;
+    }
     .ftco-footer .ftco-footer-widget h2 {
       font-weight: normal;
       color: #fff;
