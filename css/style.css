@@ -9323,13 +9323,22 @@ justify-content: center; }
 
     #map1 {
       width: 100vw;
+      height: auto;
       overflow-x: hidden; /* Add this line */
     }
     
     @media (max-width: 767.98px) {
       #map1 {
-        height: 300px;
+        height: auto;
         width: auto;
+      }
+      
+    }
+    @media (max-width: 768px) {
+      .heading-section div {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
       }
     }
 

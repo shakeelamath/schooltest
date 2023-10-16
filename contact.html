@@ -99,28 +99,38 @@
     </section>
 		
 		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
-			<div class="container">
-				<div class="row d-flex align-items-stretch no-gutters">
-					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
-						<form id="contact-form" 
-                      method="POST" action="https://script.google.com/macros/s/AKfycbza99yTuluTpfj6LScipz0PQR2lY-fMcCd9TtJU3zDhCqPQUICHsfo85bT1gVPniX9pOw/exec"
-            >
-              <div class="form-group">
-                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input type="tel" class="form-control text-white rounded-0 bg-transparent" name="number" placeholder="Phone Number">
-              </div>
-              <div class="form-group">
-                <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit"  onclick="submitForm(event)" class="btn btn-primary py-3 px-5">Submit</button>
-              </div>
-            </form>
+      <div class="container">
+          <h2 class="text-center mb-4">Online Application Form</h2>
+          <div class="row d-flex align-items-stretch no-gutters">
+              <div class="col-md-12 p-4 p-md-5 order-md-last bg-light">
+                  <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbza99yTuluTpfj6LScipz0PQR2lY-fMcCd9TtJU3zDhCqPQUICHsfo85bT1gVPniX9pOw/exec">
+                      <div class="form-group">
+                          <input type="text" class="form-control text-white rounded-0 bg-transparent" name="student_name" placeholder="Student Name">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control text-white rounded-0 bg-transparent" name="parent_name" placeholder="Parent/Guardian Name">
+                      </div>
+                      <div class="form-group">
+                          <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                          <input type="tel" class="form-control text-white rounded-0 bg-transparent" name="phone_number" placeholder="Phone Number">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control text-white rounded-0 bg-transparent" name="previous_school" placeholder="Previous School">
+                      </div>
+                      <div class="form-group">
+                          <label>Grade Applying For:</label><br>
+                          <input type="radio" name="grade_applying_for" value="Primary School"> Primary School<br>
+                          <input type="radio" name="grade_applying_for" value="Pre School"> Pre School<br>
+                      </div>
+                      <div class="form-group">
+                          <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Message (Optional)"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <button type="submit" onclick="submitForm(event)" class="btn btn-primary py-3 px-5">Submit</button>
+                      </div>
+                  </form>
             <script>
               function submitForm(event) {
                   event.preventDefault(); // Prevent the form from submitting immediately
@@ -150,10 +160,13 @@
               }
           </script>
 					</div>
-					<div class="col-md-6 d-flex align-items-stretch">
-						<div id="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.851850832073!2d80.40212100000001!3d8.317517000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf45176147741%3A0x29952b37ba133259!2sCambridge%20International%20School%20Anuradhapura!5e0!3m2!1sen!2slk!4v1696822782243!5m2!1sen!2slk" width="600" height="450" style="border:0; padding: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-					</div>
+					
 				</div>
+        <div class="col-md-12 d-flex align-items-stretch">
+          <div id="map1">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.851850832073!2d80.40212100000001!3d8.317517000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf45176147741%3A0x29952b37ba133259!2sCambridge%20International%20School%20Anuradhapura!5e0!3m2!1sen!2slk!4v1696822782243!5m2!1sen!2slk" width="1200" height="450" style="border:0; padding: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
 			</div>
 		</section>
 
