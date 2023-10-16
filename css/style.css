@@ -77,7 +77,7 @@ body {
 
 .popup img {
   max-width: 100%; /* Ensure the image doesn't overflow the popup */
-  max-height: 80vh;
+  max-height: 100%;
 }
 
 .popup-close-btn {
@@ -98,6 +98,24 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Darken the background */
   z-index: 9998; /* Ensure the overlay is behind the popup */
+}
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 80%; /* Adjust the width as needed */
+    height: 80vh; /* Adjust the height as needed */
+    max-width: none; /* Override max-width */
+    max-height: none;
+    border: none;
+    background: transparent; 
+     /* Override max-height */
+  }
+
+  .popup img {
+    max-width: 100%; /* Ensure the image doesn't overflow the popup */
+    max-height: 100%; /* Ensure the image doesn't overflow the popup */
+    width: auto; /* Allow the image to scale */
+    height: auto; /* Allow the image to scale */
+  }
 }
 
   
