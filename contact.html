@@ -106,8 +106,14 @@
           <div class="row d-flex align-items-stretch no-gutters">
               <div class="col-md-12 p-4 p-md-5 order-md-last bg-light">
                   <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbza99yTuluTpfj6LScipz0PQR2lY-fMcCd9TtJU3zDhCqPQUICHsfo85bT1gVPniX9pOw/exec">
+                    <div class="form-group">
+                      <label>Inquiry Type:</label><br>
+                      <input type="radio" name="inquiry_type" value="Admissions"> Admissions<br>
+                      <input type="radio" name="inquiry_type" value="General Inquiry"> General Inquiry<br>
+                      <input type="radio" name="inquiry_type" value="Job Inquiry"> Job Inquiry<br>
+                  </div>
                       <div class="form-group">
-                          <input type="text" class="form-control text-white rounded-0 bg-transparent" name="student_name" placeholder="Student Name">
+                          <input type="text" class="form-control text-white rounded-0 bg-transparent" name="student_name" placeholder="Student Name/Name">
                       </div>
                       <div class="form-group">
                           <input type="text" class="form-control text-white rounded-0 bg-transparent" name="parent_name" placeholder="Parent/Guardian Name">
@@ -117,9 +123,6 @@
                       </div>
                       <div class="form-group">
                           <input type="tel" class="form-control text-white rounded-0 bg-transparent" name="phone_number" placeholder="Phone Number">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" class="form-control text-white rounded-0 bg-transparent" name="previous_school" placeholder="Previous School">
                       </div>
                       <div class="form-group">
                           <label>Grade Applying For:</label><br>
